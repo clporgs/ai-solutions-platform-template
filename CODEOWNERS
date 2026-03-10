@@ -1,0 +1,8 @@
+# CODEOWNERS (template)
+# Update owners to match your org.
+
+/docs/ @architecture-team
+/agentic-specs/ @architecture-team
+/prompts/ @prompt-owners
+/backend/ @backend-team
+/deployment/ @devops-team

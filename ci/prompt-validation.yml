@@ -1,0 +1,9 @@
+name: Prompt Validation
+on: [push]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate prompt files
+        run: echo 'Validate schemas'

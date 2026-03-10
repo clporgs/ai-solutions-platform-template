@@ -1,0 +1,38 @@
+openapi: 3.0.0
+info:
+  title: AI Game Platform API
+  version: 1.0.0
+servers:
+  - url: https://api.example.com
+paths:
+  /quiz/questions:
+    post:
+      summary: Generate quiz questions
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                category: {type: string}
+                difficulty: {type: string}
+                n: {type: integer}
+      responses:
+        '200':
+          description: OK
+  /quiz/validate:
+    post:
+      summary: Validate an answer
+      responses:
+        '200': {description: OK}
+  /ludo/validate-move:
+    post:
+      summary: Validate a ludo move
+      responses:
+        '200': {description: OK}
+  /ludo/update-state:
+    post:
+      summary: Update ludo game state
+      responses:
+        '200': {description: OK}
